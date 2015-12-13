@@ -24,7 +24,7 @@
       "elements": {
         "order": 1,
         "title": "Elements",
-        "description": "Select the elements you'd like to apply a hover effect to",
+        "description": "Select the elements you’d like to apply a hover effect to.",
         "type": "array",
         "items": {
           "type": "object",
