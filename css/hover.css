@@ -1,6 +1,6 @@
 /*!
  * Hover.css (http://ianlunn.github.io/Hover/)
- * Version: 2.0.0
+ * Version: 2.0.2
  * Author: Ian Lunn @IanLunn
  * Author URL: http://ianlunn.co.uk/
  * Github: https://github.com/IanLunn/Hover
@@ -1391,7 +1391,51 @@
   transition-property: color, background-color;
 }
 .hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
-  background-color: #2098d1;
+  background-color: #22ac9b;
+  color: white;
+}
+
+/* Back Pulse */
+@-webkit-keyframes hvr-back-pulse {
+  50% {
+    background-color: rgba(34, 172, 155, 0.75);
+  }
+}
+
+@keyframes hvr-back-pulse {
+  50% {
+    background-color: rgba(34, 172, 155, 0.75);
+  }
+}
+
+.hvr-back-pulse {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+.hvr-back-pulse:hover, .hvr-back-pulse:focus, .hvr-back-pulse:active {
+  -webkit-animation-name: hvr-back-pulse;
+  animation-name: hvr-back-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-color: #22ac9b;
+  background-color: #22ac9b;
   color: white;
 }
 
@@ -1419,7 +1463,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: #2098d1;
+  background: #22ac9b;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 0 50%;
@@ -1463,7 +1507,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: #2098d1;
+  background: #22ac9b;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 100% 50%;
@@ -1507,7 +1551,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: #2098d1;
+  background: #22ac9b;
   -webkit-transform: scaleY(0);
   transform: scaleY(0);
   -webkit-transform-origin: 50% 0;
@@ -1551,7 +1595,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: #2098d1;
+  background: #22ac9b;
   -webkit-transform: scaleY(0);
   transform: scaleY(0);
   -webkit-transform-origin: 50% 100%;
@@ -1595,7 +1639,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: #2098d1;
+  background: #22ac9b;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 0 50%;
@@ -1641,7 +1685,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: #2098d1;
+  background: #22ac9b;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 100% 50%;
@@ -1687,7 +1731,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: #2098d1;
+  background: #22ac9b;
   -webkit-transform: scaleY(0);
   transform: scaleY(0);
   -webkit-transform-origin: 50% 0;
@@ -1733,7 +1777,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: #2098d1;
+  background: #22ac9b;
   -webkit-transform: scaleY(0);
   transform: scaleY(0);
   -webkit-transform-origin: 50% 100%;
